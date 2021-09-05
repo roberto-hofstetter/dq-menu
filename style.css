@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Public Sans', sans-serif;
+}
+
+header {
+     overflow: hidden;
+     background-color: white;
+     padding: 38px 55px;
+}
+
+.logo{
+     float: left;
+}
+
+.logo a, .logo img, .logo h1{
+     float: left;
+}
+
+.logo h1{
+     padding: 0;
+     margin: 0;
+     line-height: 40px;
+     font-size: 20px;
+}
+
+.menu a { 
+     color: black;
+     text-align: left;
+     text-decoration: none;
+     font-size: 15px;
+     line-height: 18px;
+     border-radius: 0px;
+}
+
+.menu, ul{
+     float: right;
+     padding: 0;
+     margin: 0;
+}
+
+.menu ul li {
+     list-style: none;     
+     display: inline-block;
+}
+
+.menu ul li a{
+     display: block;
+     width: 100%;
+     text-align: center;
+     padding: 10px;
+}
+
+.menu ul a:hover {
+     background-color: #5BC241;
+     color: white;
+}
+
+.menu ul a.active {
+     background-color: #5BC241;
+     color: white;
+}
+
+.menu .btn {
+     background-color: #5BC241;
+     border: none;
+     color: white;
+     padding:  12px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 15px;
+     border-radius: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 810px) {     
+     .logo{
+          float: left;
+          display: block;
+          width: 100%;
+          text-align: center;
+     }
+
+     .logo a{
+          margin: 0 auto;
+          display: block;          
+     }
+
+     .logo h1{
+          display: none;
+     }
+
+     .logo a, .logo img{
+          float: none;
+          display: inline-block;
+     }
+
+     .menu, ul{
+          float: none;
+          margin: 0 auto;
+     }
+
+     .menu ul{
+          margin-top: 20px;
+     }
+
+     .menu ul li{
+          width: 100%;
+          padding: 1px 0;
+     }     
+}
